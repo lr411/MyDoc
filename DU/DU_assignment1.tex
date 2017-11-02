@@ -1,7 +1,7 @@
 %:
 %\documentclass[12pt,mythesisstyle,twoside]{report}%% for two-sided printing
 \documentclass[12pt,mythesisstyle]{report}
-\usepackage{files/mythesisstyle}
+%\usepackage{files/mythesisstyle}
 %\usepackage{bbm}
 
 \usepackage{amssymb,amsmath}
@@ -14,15 +14,15 @@
 
 \title{Data And Uncertainity\\Assignment 8 November 2017}
 \author{Leonardo Ripoli}
-\date{November 2017}
+\date{}
 
 \begin{document}
 
 \begin{titlepage}
 \maketitle
 \end{titlepage}
-
-Ex. 1) Let \(\Omega=\mathbb{N}\), show that \textbf{\textit{A}}, the set of all cofinite subsets in \(\Omega\), forms an algebra.
+\textbf{Ex1.1)}\\
+Let \(\Omega=\mathbb{N}\), show that \textbf{\textit{A}}, the set of all cofinite subsets in \(\Omega\), forms an algebra.
 \\
 \\The proof is done by checking that the 3 properties of an algebra are satisfied: empty set, closeness to complement and closeness to finite unions.
 \\
@@ -31,5 +31,9 @@ Ex. 1) Let \(\Omega=\mathbb{N}\), show that \textbf{\textit{A}}, the set of all 
 \item By definition if \(A\in\textbf{\textit{A}}\) it is cofinite, therefore either it is finite and its complement is infinite, or the other way around: in either case \(A\in\textbf{\textit{A}}\implies A^\complement\in\textbf{\textit{A}}\).\\
 \item Let \(A_1, A_2, A_3...\in\textbf{\textit{A}}\), then if all of the \(A_i\) are finite, clearly \(\cup_{k=1}^nA_i\) is finite and therefore \(\cup_{k=1}^nA_i\in\textbf{\textit{A}}\). If at least one of the \(A_i\) is infinite, then \(\cup_{k=1}^nA_i\) is infinite, we have to show that \((\cup_{k=1}^nA_i)^\complement\) is finite. Let's say at least \(A_k\) is infinite (and therefore \(A_k^\complement\) is finite because \(A_k\) is cofinite by hypothesis), we have that \((\cup_{k=1}^nA_i)^\complement=\cap_{k=1}^nA_i^\complement\), and since \(\cap_{k=1}^nA_i^\complement\subseteq A_k^\complement\) and \(A_k^\complement\) is finite, it must be that \(\cap_{k=1}^nA_i^\complement\) is finite and therefore we have shown that \(\cup_{k=1}^nA_i\in\textbf{\textit{A}}\).
 \end{enumerate}
+
+\textbf{Ex1.2)}\\
+Let \textbf{\textit{A}} be the algebra of cofinite sets and define the set function \(\mu(A)=1\) if A is finite, and 0 otherwise: show that \(\mu\) is normalised and additive.
+
 
 \end{document}
