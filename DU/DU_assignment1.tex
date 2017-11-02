@@ -24,11 +24,12 @@
 
 Ex. 1) Let \(\Omega=\mathbb{N}\), show that \textbf{\textit{A}}, the set of all cofinite subsets in \(\Omega\), forms an algebra.
 \\
-\\Proof
+\\The proof is done by checking that the 3 properties of an algebra are satisfied: empty set, closeness to complement and closeness to finite unions.
 \\
-1) \(\varnothing\in\textbf{\textit{A}}\), in fact \(\varnothing^\complement=\mathbb{N}\), which is infinite.\\
-2) By definition if \(A\in\textbf{\textit{A}}\) it is cofinite, therefore either it is finite and its complement is infinite, or the other way around: in either case \(A\in\textbf{\textit{A}}\implies A^\complement\in\textbf{\textit{A}}\).\\
-3) Let \(A_1, A_2, A_3...\in\textbf{\textit{A}}\), then if all of the \(A_i\) are finite, clearly \(\cup_{k=1}^nA_i\) is finite and therefore \(\cup_{k=1}^nA_i\in\textbf{\textit{A}}\). If at least one of the \(A_i\) is infinite, then \(\cup_{k=1}^nA_i\) is infinite, we have to show that \(\cup_{k=1}^nA_i^\complement\) 
-
+\begin{enumerate}
+\item \(\varnothing\in\textbf{\textit{A}}\) trivially because it is finite.\\
+\item By definition if \(A\in\textbf{\textit{A}}\) it is cofinite, therefore either it is finite and its complement is infinite, or the other way around: in either case \(A\in\textbf{\textit{A}}\implies A^\complement\in\textbf{\textit{A}}\).\\
+\item Let \(A_1, A_2, A_3...\in\textbf{\textit{A}}\), then if all of the \(A_i\) are finite, clearly \(\cup_{k=1}^nA_i\) is finite and therefore \(\cup_{k=1}^nA_i\in\textbf{\textit{A}}\). If at least one of the \(A_i\) is infinite, then \(\cup_{k=1}^nA_i\) is infinite, we have to show that \((\cup_{k=1}^nA_i)^\complement\) is finite. Let's say at least \(A_k\) is infinite (and therefore \(A_k^\complement\) is finite because \(A_k\) is cofinite by hypothesis), we have that \((\cup_{k=1}^nA_i)^\complement=\cap_{k=1}^nA_i^\complement\), and since \(\cap_{k=1}^nA_i^\complement\subseteq A_k^\complement\) and \(A_k^\complement\) is finite, it must be that \(\cap_{k=1}^nA_i^\complement\) is finite and therefore we have shown that \(\cup_{k=1}^nA_i\in\textbf{\textit{A}}\).
+\end{enumerate}
 
 \end{document}
