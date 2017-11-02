@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.10)  2 NOV 2017 22:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.10)  2 NOV 2017 23:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -163,11 +163,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
 [1] (./DU_assignment1.aux) ) 
 Here is how much of TeX's memory you used:
  1264 strings out of 492995
  14653 string characters out of 6132703
- 68597 words of memory out of 5000000
+ 69597 words of memory out of 5000000
  4848 multiletter control sequences out of 15000+600000
  13188 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -183,7 +188,7 @@ fonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on DU_assignment1.pdf (2 pages, 86235 bytes).
+Output written on DU_assignment1.pdf (2 pages, 86301 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
