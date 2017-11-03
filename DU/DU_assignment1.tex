@@ -52,5 +52,6 @@ Show that F is a probability on $(\Omega, \textbf{\textit{A}})$.
 \\
 \begin{enumerate}
 \item $F(\Omega)=\int 1_\Omega\cdot fdP$, remembering the definition of the indicator function, we have that $1_\Omega\cdot f=f$, therefore $F(\Omega)=\int 1_\Omega\cdot fdP=\int fdP=1$.\\
+\item Let $A_1, A_2,...A_n\in\textbf{\textit{A}}$, with $A_i\cap A_j=\varnothing$ for $i\neq j$. $\sum_{k=1}^nP(A_k)=\sum_{k=1}^n\int 1_{A_k}\cdot fdP$. Using monotone convergence theorem, we know we can build $f_n\uparrow f$ with $f_n$ simple functions and so that $\int f_n dP\uparrow \int fdP$. It's $\sum_{k=1}^n\int 1_{A_k}\cdot fdP=$
 \end{enumerate}
 \end{document}
