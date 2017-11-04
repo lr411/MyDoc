@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.10)  4 NOV 2017 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.10)  4 NOV 2017 21:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -227,7 +227,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
  []
 
 
-Overfull \hbox (5.53537pt too wide) in paragraph at lines 55--57
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Overfull \hbox (5.53537pt too wide) in paragraph at lines 56--58
 []$$[]$\OT1/cmr/m/n/12 . So
  []
 
@@ -235,7 +240,11 @@ Overfull \hbox (5.53537pt too wide) in paragraph at lines 55--57
 Overfull \vbox (29.41454pt too high) has occurred while \output is active []
 
 
-[3] (./DU_assignment1.aux) ) 
+[3]
+Overfull \vbox (29.41454pt too high) has occurred while \output is active []
+
+
+[4] (./DU_assignment1.aux) ) 
 Here is how much of TeX's memory you used:
  1352 strings out of 492995
  15844 string characters out of 6132703
@@ -253,15 +262,16 @@ c/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/symbols/msbm10.pfb>
-Output written on DU_assignment1.pdf (4 pages, 125796 bytes).
+ts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on DU_assignment1.pdf (5 pages, 134430 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
