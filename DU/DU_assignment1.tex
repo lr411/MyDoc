@@ -61,6 +61,11 @@ Show that $P(A)=0\implies F(A)=0$.
 \\
 \\We start by proving for simple f. Let $f=\sum_{j=1}^p f_j\cdot 1_{B_j}$, then we have $F(A)=\int f\cdot 1_{A}dP=\int \sum_{j=1}^p f_j\cdot 1_A\cdot 1_{B_j}dP=\int \sum_{j=1}^p f_j\cdot 1_{A\cap B_j}dP=\sum_{j=1}^p f_jP(A\cap B_j)=0$, the last equality coming from the fact that we have $P(A)=0$ by hypothesis and therefore it must be $0<=P(A\cap B_j)<=P(A)=0$. We have therefore proved that that for f simple $P(A)=0\implies F=0$.
 \\We now consider the case of a positive function that is not simple. We consider $f_n=\sum_{j=1}^{p_n} f_{jn}\cdot 1_{B_jn}$, with $\{f_n\}$ sequence of simple functions s.t. $f_n\uparrow f$. We have demonstrated in the first part of this exercise 2.2 that for a simple function, if $P(A)=0$, it will be $\int f_n\cdot 1_{A}dP=\int \sum_{j=1}^{p_n} f_{jn}\cdot 1_A\cdot 1_{B_{jn}}dP=\sum_{j=1}^{p_n} f_jP(A\cap B_{jn})=0$, therefore $\int f_n\cdot 1_{A}dP=0$ $\forall n$, and $0=\lim_{n \to \infty}\int f_n\cdot 1_{A}dP=\int f\cdot 1_{A}dP=F(A)$, so we have demonstrated that $P(A)=0\implies F(A)=0$.
+\\\\
+\textbf{Ex2.3)}\\
+Show that if $\int gdP=F=\int fdP$ then $f=g$ a.e.
+\\\\
+We can use the result $\int fdP=0 \implies f=0$ a.e. We have by hypothesis that $\int (f-g)dP=0$, let $h=f-g$, using $h_+=$max$\{f,0\}$ and $h_-=$min$\{f,0\}$, we have $h=h_+-h_-$.
 
 \end{enumerate}
 \end{document}
