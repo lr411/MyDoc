@@ -48,7 +48,7 @@ Let $(\Omega, \textbf{\textit{A}}, P)$ be a probability space. Let f be a non ne
 \\
 Show that F is a probability on $(\Omega, \textbf{\textit{A}})$.
 \\
-\\The proof is done by checking the properties of a probability on a sigma algebra: normalisation and sigma additivity. Sigma (infinite) additivity proves both simple (non infinite) additivity and continuity at $\varnothing$ (result used from the book).
+\\The proof is done by checking the properties of a probability on a sigma algebra: normalisation and sigma additivity. Sigma (infinite) additivity proves both simple (non infinite) additivity and continuity at $\varnothing$ (result used without proof from the lecture notes: exercise 2.2, point 2).
 
 \begin{enumerate}
   \item $F(\Omega)=\int 1_\Omega\cdot fdP$, remembering the definition of the indicator function, we have that $F(\Omega)=\int 1_\Omega\cdot fdP=\int_\Omega fdP=1$ by hypothesis.
@@ -58,8 +58,8 @@ Show that F is a probability on $(\Omega, \textbf{\textit{A}})$.
 \textbf{Ex2.2)}\\
 Show that $P(A)=0\implies F(A)=0$.
 \\
-\\We start by proving for simple f. Let $f=\sum_{j=1}^p f_j\cdot 1_{B_j}$, then we have $F(A)=\int f\cdot 1_{A}dP=\int \sum_{j=1}^p f_j\cdot 1_A\cdot 1_{B_j}dP=\int \sum_{j=1}^p f_j\cdot 1_{A\cap B_j}dP=\sum_{j=1}^p f_jP(A\cap B_j)=0$, the last equality coming from the fact that we have $P(A)=0$ by hypothesis and therefore it must be $0<=P(A\cap B_j)<=P(A)=0$. We have therefore proved that that for f simple $P(A)=0\implies F=0$.
-\\We now consider the case of a positive function that is not simple. We consider $f_n=\sum_{j=1}^{p_n} f_{jn}\cdot 1_{B_jn}$, with $\{f_n\}$ an increasing sequence of simple functions s.t. $f_n\uparrow f$, and therefore $\int_A f_ndP\uparrow\int_A fdP$. We have demonstrated in the first part of this exercise 2.2 that for a simple function, if $P(A)=0$, it will be $\int f_n\cdot 1_{A}dP=\int \sum_{j=1}^{p_n} f_{jn}\cdot 1_A\cdot 1_{B_{jn}}dP=\sum_{j=1}^{p_n} f_jP(A\cap B_{jn})=0$, therefore $\int f_n\cdot 1_{A}dP=0$ $\forall n$, and $0=\lim_{n \to \infty}\int f_n\cdot 1_{A}dP=\int f\cdot 1_{A}dP=F(A)$, so we have demonstrated that $P(A)=0\implies F(A)=0$.
+\\We start by proving for simple f. Let $f=\sum_{j=1}^p f_j\cdot 1_{B_j}$, then we have $F(A)=\int f\cdot 1_{A}dP=\int \sum_{j=1}^p f_j\cdot 1_A\cdot 1_{B_j}dP=\sum_{j=1}^p \int f_j\cdot 1_{A\cap B_j}dP=\sum_{j=1}^p f_jP(A\cap B_j)=0$, the zero equality coming from the fact that we have $P(A)=0$ by hypothesis and $A\cap B_j\subseteq A$ therefore it must be $0<=P(A\cap B_j)<=P(A)=0$. We have therefore proved that that for f simple $P(A)=0\implies F=0$.
+\\We now consider the case of a positive function that is not simple. We consider $f_n=\sum_{j=1}^{p_n} f_{jn}\cdot 1_{B_jn}$, with $\{f_n\}$ an increasing sequence of simple functions s.t. $f_n\uparrow f$, and therefore (thanks to the Monotone Convergence Theorem) $\int f_ndP\uparrow\int fdP$ (the construction of an increasing sequence of simple functions is in the lecture notes, in the paragraph "The integral"). We have demonstrated in the first part of this exercise 2.2 that for a simple function, if $P(A)=0$ the integral will always be zero, therefore it will be $\int f_n\cdot 1_{A}dP=\int \sum_{j=1}^{p_n} f_{jn}\cdot 1_A\cdot 1_{B_{jn}}dP=\sum_{j=1}^{p_n} f_jP(A\cap B_{jn})=0$, therefore $\int f_n\cdot 1_{A}dP=0$ $\forall n$, and $0=\lim_{n \to \infty}\int f_n\cdot 1_{A}dP=\int f\cdot 1_{A}dP=F(A)$, so we have demonstrated that $P(A)=0\implies F(A)=0$.
 \\\\
 \textbf{Ex2.3)}\\
 Show that $\int gdP=F=\int fdP\implies f=g$ a.e. ($\Longleftarrow$ is trivial).
