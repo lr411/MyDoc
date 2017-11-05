@@ -49,8 +49,13 @@ Let $(\Omega, \textbf{\textit{A}}, P)$ be a probability space. Let f be a non ne
 Show that F is a probability on $(\Omega, \textbf{\textit{A}})$.
 \\
 \\The proof is done by checking that the 3 properties of a probability: normalisation, additivity and continuity at $\varnothing$ (this latter is proved using the equivalent sigma additivity).
-\\\\
 \\
+\begin{enumerate}
+\item $F(\Omega)=\int 1_\Omega\cdot fdP$, remembering the definition of the indicator function, we have that $F(\Omega)=\int 1_\Omega\cdot fdP=\int_\Omega fdP=1$.\\
+\item Let $A_1, A_2,...A_n\in\textbf{\textit{A}}$, with $A_i\cap A_j=\varnothing$ for $i\neq j$. $\sum_{k=1}^n F(A_k)=\sum_{k=1}^n\int 1_{A_k}\cdot fdP=\sum_{k=1}^n\int_{A_k}\cdot fdP$. On the other hand, $F(\cup_{k=1}^n A_k)=\int 1_{\cup_{k=1}^n A_k}\cdot fdP=\int_{\cup_{k=1}^n A_k}fdP$. Since all the domains $A_k$ are disjoint we have that $\int_{\cup_{k=1}^n A_k}fdP=\sum_{k=1}^n \int_{A_k}fdP$, and therefore $\sum_{k=1}^n F(A_k)=\sum_{k=1}^n\int 1_{A_k}\cdot fdP=F(\cup_{k=1}^n A_k)$, which proves the additivity.\\
+\item Let $A_1, A_2,...A_n\in\textbf{\textit{A}}$, with $A_i\cap A_j=\varnothing$ for $i\neq j$. $\sum_{k}P(A_k)=\sum_{k}F(A_k)=\sum_{k}\int 1_{A_k}\cdot fdP$. Using monotone convergence theorem, we know we can build $f_n\uparrow f$ with $f_n$ simple functions and so that $\int f_n dP\uparrow \int fdP$. It's $\displaystyle{\sum_{k}\int 1_{A_k}\cdot fdP=\lim_{n \to \infty}\sum_{k}\int 1_{A_k}\cdot f_ndP}$ (in fact $\int_{A_k} f_ndP\uparrow\int_{A_k} fdP \forall A_k$). Expressing explicitly $f_n$ as simple function we have: $f_n=\sum_{j=1}f_{n_j}\cdot 1_{B_{nj}}$. \underline{In the following expressions, for simplicity of notation, we will omit the}\\\underline{$\lim_{n \to \infty}$}\underline{or $\uparrow$ whenever there is $f_n$, but it is intended each time there is $f_n$}. So expressing in terms of $f_n$, $F(A_k)=\int\sum_j f_{n_j}\cdot 1_{B_{nj}}\cdot 1_{A_k}dP=\int\sum_j f_{n_j}\cdot 1_{B_{nj} \cap {A_k}}dP$, and therefore $\sum_k F(A_k)=\sum_k \int\sum_j f_{n_j}\cdot 1_{B_{nj} \cap {A_k}}dP=\\=\sum_k\sum_j f_{n_j}\mu(B_{nj} \cap {A_k})$. On the other hand,\\$F(\cup_k A_k)=\int \sum_j f_{n_j}1_{B_{nj}} \cdot 1_{\cup _k {A_k}}dP=\int \sum_j f_{n_j}1_{B_{nj}\cap (\cup _k {A_k})}dP=\\=\sum_j f_{n_j}\mu({B_{nj}\cap (\cup _k {A_k})})=\sum_j f_{n_j}\mu(\cup_k({B_{nj}\cap {A_k}}))$. From the sigma additivity property of $\mu$, and since $A_i\cap A_j=\varnothing$ for $i\neq j$ $\implies ({B_{nj}\cap {A_k}})\cap({B_{nj}\cap {A_z}})=\varnothing$ for $k\neq z$, we have that $\mu(\cup_k({B_{nj}\cap {A_k}}))=\sum_k\mu({B_{nj}\cap {A_k}})$.\\
+Putting all together we have that $\sum_k F(A_k)=\sum_k\sum_j f_{n_j}\mu(B_{nj} \cap {A_k})=F(\cup_k A_k).$
+\\\\
 \textbf{Ex2.2)}\\
 Show that $P(A)=0\implies F(A)=0$.
 \\
@@ -68,5 +73,5 @@ Show that $A_1, A_2,...\in\textbf{\textit{A}}$, $A_1\supset A_2...$ and $P(A_k)\
 \\We start by proving for simple f. Let $f=\sum_{j=1}^p f_j\cdot 1_{B_j}$, then we have $\int f\cdot 1_{A_k}dP=\int \sum_{j=1}^p f_j\cdot 1_{A_k}\cdot 1_{B_j}dP=\int \sum_{j=1}^p f_j\cdot 1_{A_k\cap B_j}dP=\sum_{j=1}^p f_jP(A_k\cap B_j)$ and we know that $0\leq P(A_k\cap B_j)\leq P(A_k)$, with, by assumption, $P(A_k)\rightarrow 0$ as $k\rightarrow\infty$, therefore we have$\int f\cdot 1_{A_k}dP\rightarrow 0$ as $k\rightarrow\infty$.
 \\
 
+\end{enumerate}
 \end{document}
-
