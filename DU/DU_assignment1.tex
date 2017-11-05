@@ -1,7 +1,7 @@
 %:
 %\documentclass[12pt,mythesisstyle,twoside]{report}%% for two-sided printing
 \documentclass[12pt,mythesisstyle]{report}
-\usepackage{files/mythesisstyle}
+%\usepackage{files/mythesisstyle}
 \usepackage{bbm}
 
 \usepackage{amssymb,amsmath}
@@ -60,12 +60,12 @@ Putting all together we have that $\sum_k F(A_k)=\sum_k\sum_j f_{n_j}\mu(B_{nj} 
 Show that $P(A)=0\implies F(A)=0$.
 \\
 \\We start by proving for simple f. Let $f=\sum_{j=1}^p f_j\cdot 1_{B_j}$, then we have $F(A)=\int f\cdot 1_{A}dP=\int \sum_{j=1}^p f_j\cdot 1_A\cdot 1_{B_j}dP=\int \sum_{j=1}^p f_j\cdot 1_{A\cap B_j}dP=\sum_{j=1}^p f_jP(A\cap B_j)=0$, the last equality coming from the fact that we have $P(A)=0$ by hypothesis and therefore it must be $0<=P(A\cap B_j)<=P(A)=0$. We have therefore proved that that for f simple $P(A)=0\implies F=0$.
-\\We now consider the case of a positive function that is not simple. We consider $f_n=\sum_{j=1}^{p_n} f_{jn}\cdot 1_{B_jn}$, with $\{f_n\}$ sequence of simple functions s.t. $f_n\uparrow f$. We have demonstrated in the first part of this exercise 2.2 that for a simple function, if $P(A)=0$, it will be $\int f_n\cdot 1_{A}dP=\int \sum_{j=1}^{p_n} f_{jn}\cdot 1_A\cdot 1_{B_{jn}}dP=\sum_{j=1}^{p_n} f_jP(A\cap B_{jn})=0$, therefore $\int f_n\cdot 1_{A}dP=0$ $\forall n$, and $0=\lim_{n \to \infty}\int f_n\cdot 1_{A}dP=\int f\cdot 1_{A}dP=F(A)$, so we have demonstrated that $P(A)=0\implies F(A)=0$.
+\\We now consider the case of a positive function that is not simple. We consider $f_n=\sum_{j=1}^{p_n} f_{jn}\cdot 1_{B_jn}$, with $\{f_n\}$ an increasing sequence of simple functions s.t. $f_n\uparrow f$, and therefore $\int_A f_ndP\uparrow\int_A fdP$. We have demonstrated in the first part of this exercise 2.2 that for a simple function, if $P(A)=0$, it will be $\int f_n\cdot 1_{A}dP=\int \sum_{j=1}^{p_n} f_{jn}\cdot 1_A\cdot 1_{B_{jn}}dP=\sum_{j=1}^{p_n} f_jP(A\cap B_{jn})=0$, therefore $\int f_n\cdot 1_{A}dP=0$ $\forall n$, and $0=\lim_{n \to \infty}\int f_n\cdot 1_{A}dP=\int f\cdot 1_{A}dP=F(A)$, so we have demonstrated that $P(A)=0\implies F(A)=0$.
 \\\\
 \textbf{Ex2.3)}\\
-Show that if $\int gdP=F=\int fdP$ then $f=g$ a.e.
+Show that $\int gdP=F=\int fdP\implies f=g$ a.e. ($\Longleftarrow$ is trivial).
 \\\\
-We can use the result $\int fdP=0 \implies f=0$ a.e. We have by hypothesis that $\int (f-g)dP=0$, let $h=f-g$, using $h_+=$max$\{f,0\}$ and $h_-=$min$\{f,0\}$, we have $h=h_+-h_-$.
+We can use the result that for $f\geq 0$ $\int fdP=0 \implies f=0$ a.e. We have by hypothesis that $\int (f-g)dP=0$, let $h=f-g$, using $h_+=$max$\{f,0\}$ and $h_-=$min$\{f,0\}$, we have $h=h_+-h_-$. We consider $\Omega_1=\{x\in\Omega s.t. f\geq g\}$ and $\Omega_2=\{x\in\Omega s.t. f<g\}$, it's $\Omega_1\cap\Omega_2=\varnothing$ and $\Omega_1\cup\Omega_2=\Omega$. Since the property $\int_A hdP=0$ holds on any $A\subseteq\Omega$, we have $\int_{\Omega_1} hdP=0$ and $\int_{\Omega_2} hdP=0$. So, using definitions of $h_+$ and $h_-$, we have $\int_{\Omega_1} hdP=\int_{\Omega_1} h_+dP=0$ and $\int_{\Omega_2} hdP=-\int_{\Omega_2} h_-dP=0\implies\int_{\Omega_2} h_-dP=0$: in both cases we can use the result $f\geq 0$ $\int fdP=0 \implies f=0$ a.e. and therefore we have $f=g$ a.e. on $\Omega_1\cup\Omega_2=\Omega$.
 
 \end{enumerate}
 \end{document}
