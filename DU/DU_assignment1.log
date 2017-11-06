@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.10)  6 NOV 2017 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.10)  6 NOV 2017 18:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -171,44 +171,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 40--43
+Underfull \hbox (badness 10000) in paragraph at lines 40--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--52
+Underfull \hbox (badness 10000) in paragraph at lines 40--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--50
 
  []
 
 [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 59.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 65--81
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--81
+Underfull \hbox (badness 10000) in paragraph at lines 63--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--81
+Underfull \hbox (badness 10000) in paragraph at lines 63--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--81
+Underfull \hbox (badness 10000) in paragraph at lines 63--79
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 81--87
 
  []
 
@@ -216,7 +221,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--89
 Here is how much of TeX's memory you used:
  1302 strings out of 492995
  15306 string characters out of 6132703
- 75768 words of memory out of 5000000
+ 77768 words of memory out of 5000000
  4879 multiletter control sequences out of 15000+600000
  13188 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -236,7 +241,7 @@ nts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 cm/cmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb>
-Output written on DU_assignment1.pdf (6 pages, 143847 bytes).
+Output written on DU_assignment1.pdf (6 pages, 142643 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
