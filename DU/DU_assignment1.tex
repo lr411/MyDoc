@@ -70,20 +70,22 @@ We can use the result that for $z\geq 0$, $\int zdP=0 \implies z=0$ a.e. We have
 \textbf{Ex3.1)}\\
 Show that $A_1, A_2,...\in\textbf{\textit{A}}$, $A_1\supset A_2...$ and $P(A_k)\rightarrow 0$ as $k\rightarrow\infty$, $f\geq 0$, then $\int_{A_k}fdp\rightarrow0$ for $k\rightarrow\infty$.
 \\\\
-\\We start by proving for simple f. Let $f=\sum_{j=1}^p f_j\cdot 1_{B_j}$, then we have $\int f\cdot 1_{A_k}dP=\int \sum_{j=1}^p f_j\cdot 1_{A_k}\cdot 1_{B_j}dP=\int \sum_{j=1}^p f_j\cdot 1_{A_k\cap B_j}dP=\sum_{j=1}^p f_jP(A_k\cap B_j)$ and we know that $0\leq P(A_k\cap B_j)\leq P(A_k)$, with, by assumption, $P(A_k)\rightarrow 0$ as $k\rightarrow\infty$, therefore we have$\int f\cdot 1_{A_k}dP\rightarrow 0$ as $k\rightarrow\infty$.
-Let $f_n(x)=\bigg\{
+\\Let $f_n(x)=\bigg\{
 \begin{array}{ll}
 n \ \ \ for \ x \ \mid f(x)\geq n\\
 f(x) \ \ \ for \  x \ \mid 0\leq f(x)<n\\
 \end{array}$
 \\
+Proof\\
 We have that $\{f_n\}$ is an increasing sequence of positive measurable functions (since f is measurable), and, by construction, $f_n \uparrow f$ pointwise. For any $A_k\in\textbf{\textit{A}}$, we have that
 \begin{equation} \label{ex3_1}
 \int_{A_k}f dP=\int_{A_k}(f-f_n) dP+\int_{A_k}f_n dP
 \end{equation}
 $\int_{A_k}f dP=\int_{A_k}(f-f_n) dP+\int_{A_k}f_n dP$. Since $f_n \uparrow f$ and $0\leq f_n\leq f$, $(f-f_n)$ is a positive quantity, and we have that $\int_{A_k}(f-f_n) dP\leq\int_{\Omega}(f-f_n)dP$ because we consider a bigger domain of integration for a positive quantity. In addition, since by construction $f_n\leq n$, it's $\int_{A_k}f_n dP\leq nP(A_k)$. By monotone convergence theorem, for n sufficiently high, $\forall \epsilon$ we can have $\int_{\Omega}(f-f_n)dP\leq \frac{\epsilon}{2}$, and also, being by hypothesis $P(A_k)\rightarrow 0$, for k sufficiently high we can have $P(A_k)\leq\frac{\epsilon}{2n}$, therefore in (\ref{ex3_1}) we have that $\int_{A_k}f dP\leq \frac{\epsilon}{2}+\frac{\epsilon}{2n}$, therefore, ultimately, $P(A_k)\rightarrow 0\implies\int_{A_k}f dP\rightarrow 0$.
-
-
+\\
+\\
+\textbf{Ex3.2)}\\
+Show that $A_1, A_2,...\in\textbf{\textit{A}}$, $\sum_{k=1}^{\infty} P(A_k)<\infty \implies P(\cup_{l=k}^{\infty}A_l)\rightarrow 0$ if $k\rightarrow\infty$. Let $\sum_{k=1}^{\infty} P(A_k)=z\geq0$, from sigma additivity, $P(\cup_{l=k}^{\infty}A_l)=\sum_{l=k}^{\infty}P(A_k)$. From the convergence of the series, we have that $\sum_{l=k}^{\infty}P(A_k)=(z-\sum_{l=k}^{\infty}P(A_k))\rightarrow 0$ as $k\rightarrow\infty$, and this proves that $P(\cup_{l=k}^{\infty}A_l)\rightarrow 0$ if $k\rightarrow\infty$.
 
 \end{document}
 
