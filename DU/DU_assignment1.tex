@@ -29,7 +29,7 @@ Let \(\Omega=\mathbb{N}\), show that \textbf{\textit{A}}, the set of all cofinit
 \begin{enumerate}
 \item \(\varnothing\in\textbf{\textit{A}}\) trivially because it is finite.\\
 \item By definition if \(A\in\textbf{\textit{A}}\) it is cofinite, therefore either it is finite and its complement is infinite, or the other way around: in either case \(A\in\textbf{\textit{A}}\implies A^\complement\in\textbf{\textit{A}}\).\\
-\item Let \(A_1, A_2, A_3...\in\textbf{\textit{A}}\), then if all of the \(A_i\) are finite, clearly \(\cup_{k=1}^nA_i\) is finite and therefore \(\cup_{k=1}^nA_i\in\textbf{\textit{A}}\). If at least one of the \(A_i\) is infinite, then \(\cup_{k=1}^nA_i\) is infinite, we have to show that \((\cup_{k=1}^nA_i)^\complement\) is finite. Let's say at least \(A_k\) is infinite (and therefore \(A_k^\complement\) is finite because \(A_k\) is cofinite by hypothesis), we have that \((\cup_{k=1}^nA_i)^\complement=\cap_{k=1}^nA_i^\complement\), and since \(\cap_{k=1}^nA_i^\complement\subseteq A_k^\complement\) and \(A_k^\complement\) is finite, it must be that \(\cap_{k=1}^nA_i^\complement\) is finite and therefore we have shown that \(\cup_{k=1}^nA_i\in\textbf{\textit{A}}\).
+\item Let \(A_1, A_2, A_3...\in\textbf{\textit{A}}\), then if all of the \(A_i\) are finite, clearly \(\cup_{k=1}^nA_i\) is finite and therefore \(\cup_{k=1}^nA_i\in\textbf{\textit{A}}\). If at least one of the \(A_i\) is infinite, then \(\cup_{k=1}^nA_i\) is infinite, we have to show that \((\cup_{k=1}^nA_i)^\complement\) is finite. Let's say at least \(A_p\) is infinite (and therefore \(A_p^\complement\) is finite because \(A_p\) is cofinite by hypothesis), we have that \((\cup_{k=1}^nA_i)^\complement=\cap_{k=1}^nA_i^\complement\), and since \(\cap_{k=1}^nA_i^\complement\subseteq A_p^\complement\) and \(A_p^\complement\) is finite, it must be that \(\cap_{k=1}^nA_i^\complement\) is finite and therefore we have shown that \(\cup_{k=1}^nA_i\in\textbf{\textit{A}}\).
 \end{enumerate}
 \textbf{Ex1.2)}\\
 Let \textbf{\textit{A}} be the algebra of cofinite sets and define the set function \(\mu(A)=1\) if A is finite, and 0 otherwise: show that \(\mu\) is normalised and additive.
@@ -68,13 +68,13 @@ We can use the result that for $z\geq 0$, $\int zdP=0 \implies z=0$ a.e. We have
 \textbf{Ex3.1)}\\
 Show that $A_1, A_2,...\in\textbf{\textit{A}}$, $A_1\supset A_2...$ and $P(A_k)\rightarrow 0$ as $k\rightarrow\infty$, $f\geq 0$, then $\int_{A_k}fdp\rightarrow0$ for $k\rightarrow\infty$.
 \\\\
+Proof\\
 \\Let $f_n(x)=\bigg\{
 \begin{array}{ll}
 n \ \ \ for \ x \ \mid f(x)\geq n\\
 f(x) \ \ \ for \  x \ \mid 0\leq f(x)<n\\
 \end{array}$
 \\
-Proof\\
 We have that $\{f_n\}$ is an increasing sequence of positive measurable functions (since f is measurable), and, by construction, $f_n \uparrow f$ pointwise. For any $A_k\in\textbf{\textit{A}}$, we have that
 \begin{equation} \label{ex3_1}
 \int_{A_k}f dP=\int_{A_k}(f-f_n) dP+\int_{A_k}f_n dP
